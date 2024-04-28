@@ -169,6 +169,13 @@ body {
 .sag-menu i {
   color: white;
   font-size: 20px;
+  transition:  all 0.5s;
+}
+
+.sag-menu a:hover i {
+transform: rotateY(360deg);
+color: red;
+
 }
 
 /* !main div start */
