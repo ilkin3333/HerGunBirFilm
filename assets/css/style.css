@@ -182,7 +182,6 @@ color: red;
 .main-div {
   width: 100%;
   height: auto;
-  /* background-color: red; */
   display: flex;
   gap: 5%;
 }
@@ -200,6 +199,12 @@ color: red;
   width: 100%;
   height: auto;
 }
+.main-right1{
+  cursor: pointer;
+}
+.main-left1{
+  cursor: pointer;
+}
 .main-left1-write,
 .main-right1-write {
   width: 100%;
@@ -215,6 +220,18 @@ color: red;
 .main-right1-write h2 {
   font-size: 35px;
   font-weight: 600;
+}
+.main-left1-write h2:hover{
+  color: red;
+}
+.main-left1-write .movie-desc:hover{
+  color: red;
+}
+.main-right1-write h2:hover{
+  color: red;
+}
+.main-right1-write .movie-desc:hover{
+  color: red;
 }
 .time-p {
   font-size: 12px;
@@ -306,8 +323,63 @@ color: red;
   cursor: pointer;
 }
 .thanks{
-color: green;
+color: green;}
+
+
+/* !My favorite films */
+
+.fav-title{
+  margin-top: 100px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
+.fav-title h3{
+color: white;
+font-size: 23px;
+}
+
+/* slayd */
+
+.animation{
+  width: 100%;
+  height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.admin{
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.admin p {
+  color: white;
+}
+
 
 /*! responsivlik */
 @media screen and (max-width: 1024px) {

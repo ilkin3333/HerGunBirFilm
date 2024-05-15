@@ -55,3 +55,25 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 });
 });
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      }
+    }
+  });
+  
+  setInterval(function() {
+    swiper.slideNext(); 
+  }, 3000);
+  
