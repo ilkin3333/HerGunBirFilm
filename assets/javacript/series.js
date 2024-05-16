@@ -47,13 +47,28 @@ async function filmleriGetir() {
     } catch (error) {
         console.error('Filmler tapilmadi', error);
     }
-}
-
-filmleriGetir();
+};
 
 showMoreBtn.addEventListener('click', filmleriGetir);
 
 searchBtn.addEventListener('click', () => {
+    const aramaKelimesi = searchInput.value.trim().toLowerCase();
+    const filmler = document.querySelectorAll('.film');
+
+    filmler.forEach(film => {
+        const filmAdı = film.querySelector('h3').textContent.toLowerCase();
+        if (filmAdı.includes(aramaKelimesi)) {
+            film.style.display = 'block';
+        } else {
+            film.style.display = 'none';
+        }
+    });
+});
+
+filmleriGetir();
+
+
+searchInput.addEventListener('keydown', event =>{
     const aramaKelimesi = searchInput.value.trim().toLowerCase();
     const filmler = document.querySelectorAll('.film');
 

@@ -9,16 +9,18 @@
     border: 1px solid #ccc;
   }
   #showMoreBtn {
-
+    margin-left: 10px;
+margin-bottom: 20px;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     cursor: pointer;
   }
 
   #searchInput{
+    margin-left: 10px;
     width: 150px;
     height: 30px;
     padding-left: 10px;
@@ -30,4 +32,10 @@
     height: 30px;
     outline: none;
     border: none;
+  }
+
+  @media screen and (max-width: 425px) {
+    #searchBtn{
+       margin-right: 20px;
+    }
   }
