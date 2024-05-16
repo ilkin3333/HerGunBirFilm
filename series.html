@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Her Gun Bir Film</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/series.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,17 +14,22 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <!--! navbar start -->
+    <!-- navbar start -->
     <div class="navbar">
-      <div class="left-navbar">
-        <h3>Film Loves Coincidence</h3>
+ 
+      <div>
+        <input type="text" id="searchInput" placeholder="Serial adını yaz...">
+        <button id="searchBtn">Axtar</button>
       </div>
       <div class="right-navbar">
         <ul>
-            <li><a href="index.html">Mənim Blogum</a></li>
+          <li><a href="index.html">Mənim Blogum</a></li>
           <li><a href="series.html">Seriallar</a></li>
           <li><a href="#">Haqqımda</a></li>
           <li><a href="#">Əlaqə</a></li>
@@ -34,43 +40,46 @@
         <i class="fa-solid fa-bars"></i>
       </div>
     </div>
+
+    <!-- menu acilanda arxa fon blur olacaq -->
     <div class="forblur" id="forblur">
       <div class="mini-menu" id="mini-menu" onclick="toggleMenu()">
         <ul class="menu" id="menu">
           <li>
             <div class="for-close"><h1>X</h1></div>
           </li>
-          <li><a href="#">Mənim Blogum</a></li>
-          <li><a href="#">Seriallar</a></li>
+          <li><a href="index.html">Mənim Blogum</a></li>
+          <li><a href="series.html">Seriallar</a></li>
           <li><a href="#">Haqqımda</a></li>
           <li><a href="#">Əlaqə</a></li>
         </ul>
       </div>
     </div>
-    ! navbar finish
-  
 
-    <!--! main-title finish -->
-    <!--!  sag menu-->
+    <!-- Sosial sebekeler -->
     <div class="sag-menu">
       <ul>
         <li>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </li>
         <li>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100024784792750"><i class="fa-brands fa-facebook-f"></i></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100024784792750"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
         </li>
         <li>
-          <a target="_blank" href="https://www.instagram.com/ilkin_humbatov"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://www.instagram.com/ilkin_humbatov"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </li>
       </ul>
     </div>
 
-    <!--! main-title finish -->
-
-
-
-
+    <!-- seriallar -->
+    <div id="filmContainer"></div>
+    <button id="showMoreBtn">Show More</button>
 
 
     <script src="./assets/javacript/java.js"></script>

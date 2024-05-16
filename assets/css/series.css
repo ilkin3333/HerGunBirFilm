@@ -1,0 +1,33 @@
+#filmContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .film {
+    width: 320px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  #showMoreBtn {
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #searchInput{
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+  }
+  #searchBtn{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+  }

@@ -102,3 +102,4 @@ function stopAutoplay() {
         swiper.autoplay.stop();
     }
 }
+
