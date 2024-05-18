@@ -1,41 +1,138 @@
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+.theme-toggle{
+ 
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serietema{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+body.light-mode .navbar,
+body.light-mode .left-navbar {
+  background-color: white;
+}
+
+body.light-mode .left-navbar h3 {
+  color: black;
+}
+
+body.light-mode .right-navbar a {
+  color: black;
+}
+
+body.light-mode .right-navbar a:hover {
+  color: blue;
+}
+
+body.light-mode .sag-menu {
+  background-color: white;
+}
+
+body.light-mode .sag-menu i {
+  color: black;
+}
+
+body.light-mode .main-title h1 {
+  color: black;
+}
+
+body.light-mode .main-left1-write h2,
+body.light-mode .main-right1-write h2 {
+  color: black;
+}
+
+body.light-mode .main-left1-write h2:hover,
+body.light-mode .main-left1-write .movie-desc:hover,
+body.light-mode .main-right1-write h2:hover,
+body.light-mode .main-right1-write .movie-desc:hover {
+  color: blue;
+}
+
+body.light-mode .subs-info {
+  background-color: blue;
+}
+
+body.light-mode .subs-info h2 {
+  color: white;
+}
+
+body.light-mode .subs-form {
+  background-color: lightgray;
+}
+
+body.light-mode .subs-form label,
+body.light-mode .subs-form input,
+body.light-mode .subs-form button {
+  color: black;
+  border-color: black;
+}
+body.light-mode #searchInput{
+  background-color: #F0F0F0;
+}
+body.light-mode #showMoreBtn{
+  background-color: #F0F0F0;
+}
+
+body.light-mode .fav-title h3 {
+  color: black;
+}
+
+body.light-mode .admin p {
+  color: black;
+}
+
+/* Mevcut Stiller */
 #filmContainer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .film {
-    width: 320px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  #showMoreBtn {
-    margin-left: 10px;
-margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  #searchInput{
-    margin-left: 10px;
-    width: 150px;
-    height: 30px;
-    padding-left: 10px;
-    outline: none;
-    border: none;
-  }
-  #searchBtn{
-    width: 100px;
-    height: 30px;
-    outline: none;
-    border: none;
-  }
+.film {
+  width: 320px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
 
-  @media screen and (max-width: 425px) {
-    #searchBtn{
-       margin-right: 20px;
-    }
+#showMoreBtn {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+#searchInput {
+  margin-left: 10px;
+  width: 150px;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+
+#searchBtn {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 425px) {
+  #searchBtn {
+    margin-right: 20px;
   }
+}

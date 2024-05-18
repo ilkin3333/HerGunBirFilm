@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Her Gun Bir Film</title>
+    <title>Her Gün Bir Film</title>
     <link rel="stylesheet" href="./assets/css/series.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link
@@ -21,8 +21,10 @@
   </head>
   <body>
     <!-- navbar start -->
+<div class="serietema">
+  <button class="theme-toggle" onclick="toggleTheme()">Dark / Light</button>
+</div>
     <div class="navbar">
- 
       <div>
         <input type="text" id="searchInput" placeholder="Serial adını yaz...">
         <button id="searchBtn">Axtar</button>
@@ -35,7 +37,6 @@
           <li><a href="#">Əlaqə</a></li>
         </ul>
       </div>
-
       <div class="hamburger-menu" onclick="toggleMiniMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -81,8 +82,12 @@
     <div id="filmContainer"></div>
     <button id="showMoreBtn">Show More</button>
 
-
     <script src="./assets/javacript/series.js"></script>
     <script src="./assets/javacript/java.js"></script>
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle('light-mode');
+      }
+    </script>
   </body>
 </html>

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
 }
 body {
   padding: 0 49px;
@@ -22,7 +23,7 @@ body {
 .left-navbar {
   width: 300px;
   height: 50px;
-  background-color: red;
+  background-color: rgb(121, 39, 39);
   align-items: center;
   display: flex;
   visibility: visible;
@@ -126,8 +127,6 @@ body {
 
 .forblur {
   width: 96%;
-
-  /* height: 100%; */
   position: absolute;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0);
@@ -287,7 +286,7 @@ color: red;
   width: 100%;
   border: none;
   border-bottom: 1px solid white;
-  background-color: rgb(22,21,21);
+  /* background-color: rgb(22,21,21); */
   position: relative;
   color: white;
 }
@@ -380,9 +379,104 @@ font-size: 23px;
   color: white;
 }
 
-/* seriallar sehifesi*/
+/* ! dark mode  */
+/* Mevcut CSS'nize ekleyin */
 
-/* seriallar sehifesi bitisi */
+.darklight{
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .navbar,
+.light-mode .left-navbar {
+  background-color: white;
+}
+
+.light-mode .left-navbar h3 {
+  color: black;
+}
+.light-mode .hamburger-menu i{
+  color: black;
+}
+.light-mode .right-navbar a {
+  color: black;
+}
+.light-mode .movie-desc{
+  color: black;
+}
+.light-mode .subs-form p{
+  color: white;
+}
+.light-mode .left-navbar{
+  background-color: rgb(185, 130, 130);
+}
+
+
+.light-mode .right-navbar a:hover {
+  color: blue;
+}
+
+.light-mode .sag-menu {
+  background-color: white;
+}
+
+.light-mode .sag-menu i {
+  color: black;
+}
+
+.light-mode .main-title h1 {
+  color: black;
+}
+
+.light-mode .main-left1-write h2,
+.light-mode .main-right1-write h2 {
+  color: black;
+}
+
+.light-mode .main-left1-write h2:hover,
+.light-mode .main-left1-write .movie-desc:hover,
+.light-mode .main-right1-write h2:hover,
+.light-mode .main-right1-write .movie-desc:hover {
+  color: blue;
+}
+
+.light-mode .subs-info {
+  background-color: blue;
+}
+
+.light-mode .subs-info h2 {
+  color: white;
+}
+
+.light-mode .subs-form {
+  background-color: lightgray;
+}
+
+.light-mode .subs-form label,
+.light-mode .subs-form input,
+.light-mode .subs-form button 
+{
+  color: black;
+  border-color: black;
+}
+
+.light-mode .fav-title h3 {
+  color: rgb(0, 0, 0);
+}
+
+.light-mode .admin p {
+  color: black;
+}
+
+
 
 
 /*! responsivlik */
